@@ -59,10 +59,10 @@ export default function Header() {
             {/* Logo Image */}
             <div className="relative h-12 w-12 overflow-hidden rounded-full">
               <Image
-                src="/logo/logo.png"
+                src={isScrolled ? "/logo/logo-green.png" : "/logo/logo.png"}
                 alt={siteConfig.name}
                 fill
-                className="object-contain"
+                className="object-contain transition-opacity duration-300"
                 priority
               />
             </div>
@@ -181,7 +181,7 @@ export default function Header() {
           {/* Mobile Footer Info */}
           <div className="mt-8 border-t border-secondary-200 pt-6">
             <p className="text-sm text-neutral-500 text-center">
-              © 2024 Sinar Heritage. All rights reserved.
+              © 2025 Sinar Heritage. All rights reserved.
             </p>
           </div>
         </div>
